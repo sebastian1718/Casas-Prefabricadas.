@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1a39; /* azul marino oscuro */
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.btn {
+    background: white;
+    color: #0b1a39;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo-grande {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: lightblue;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.carrusel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.casa {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.casa.activa {
+    display: block;
+}
+
+.flecha {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.info-casa {
+    margin-top: 15px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.1);
+    padding: 12px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 📱 Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-grande {
+        width: 100px;
+        height: 100px;
+    }
+
+    .carrusel {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flecha {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .info-casa {
+        font-size: 14px;
+        width: 95%;
+    }
+}
